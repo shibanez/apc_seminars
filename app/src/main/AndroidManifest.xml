@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="apc.edu.ph.apcseminarmi151">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apc_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Questions" />
+        <activity android:name=".SeminarListActivity" />
+        <activity android:name=".SeminarEditActivity" />
+        <activity
+            android:name=".SeminarActivity"
+            android:label="@string/title_activity_seminar"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Register"></activity>
+    </application>
+
+</manifest>
